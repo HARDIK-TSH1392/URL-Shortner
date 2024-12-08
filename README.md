@@ -41,19 +41,16 @@ This project implements a simplified URL shortener service using Python and Flas
 ---
 
 ## **Challenges Faced**
-1. **403 Forbidden Issue**:
-   - While testing, a `403` error was encountered due to incorrect handling of server permissions and base URL validations.
-   - **Resolution**: Adjusted the `_is_valid_url` method to skip reachability checks for the base URL, focusing only on structural validation.
 
-2. **Concurrency Management**:
+1. **Concurrency Management**:
    - Handling multiple simultaneous requests required ensuring thread safety when modifying shared data structures.
    - **Resolution**: Used Python's `threading.Lock` to manage concurrent access.
 
-3. **TTL Functionality**:
+2. **TTL Functionality**:
    - Ensuring efficient expiration checks without degrading performance.
    - **Resolution**: Implemented expiration checks only during redirection or access, avoiding background tasks for cleanup.
 
-4. **Short URL Accessibility**:
+3. **Short URL Accessibility**:
    - Initially, shortened URLs did not work because they weren't backed by a functional server.
    - **Resolution**: Integrated Flask to handle HTTP requests and make the service accessible via a local web server.
 
