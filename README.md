@@ -106,18 +106,3 @@ This project implements a simplified URL shortener service using Python and Flas
 
 4. Use Postman, cURL, or your browser to test the endpoints.
 
----
-
-## **Future Improvements**
-1. **Persistent Storage**:
-   - Replace in-memory dictionaries with a database (e.g., SQLite, Redis) for scalability and durability.
-2. **Custom Short URL Aliases**:
-   - Allow users to specify custom aliases for shortened URLs.
-3. **Rate Limiting**:
-   - Implement mechanisms to prevent abuse by limiting requests per user or IP.
-4. **Enhanced Analytics**:
-   - Provide detailed statistics such as referrers, geolocation, and device information.
-5. **Distributed System**:
-   - Scale the service using distributed architecture, load balancing, and horizontal scaling.
-
----
