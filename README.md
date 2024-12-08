@@ -121,11 +121,3 @@ This project implements a simplified URL shortener service using Python and Flas
    - Scale the service using distributed architecture, load balancing, and horizontal scaling.
 
 ---
-
-## **Contributing**
-Contributions are welcome! Please submit a pull request with a detailed explanation of your changes.
-
----
-
-## **License**
-This project is licensed under the MIT License. See `LICENSE` for details.
